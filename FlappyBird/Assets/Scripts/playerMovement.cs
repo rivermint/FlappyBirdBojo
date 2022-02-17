@@ -41,17 +41,7 @@ public class playerMovement : MonoBehaviour
 
 
 
-        if (coll.gameObject.CompareTag("Ground"))
-        {
-
-
-
-
-            rb.constraints = RigidbodyConstraints2D.FreezePosition;
-
-
-
-        }
+       
     }
 
 }
