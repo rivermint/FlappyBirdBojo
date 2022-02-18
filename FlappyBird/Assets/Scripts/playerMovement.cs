@@ -8,7 +8,7 @@ public class playerMovement : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField] private float PlayerJump = 3f;
     [SerializeField] private float ForwardForce = 3f;
-
+    public bool Alive = true;
 
     void Start()
     {
@@ -18,8 +18,11 @@ public class playerMovement : MonoBehaviour
 
     void Update()
     {
-       
+       if ( Alive)
+        {
             transform.Translate(Vector3.right * ForwardForce * Time.deltaTime);
+        }
+           
       
 
         //uses unity input system 
