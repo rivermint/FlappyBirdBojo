@@ -18,10 +18,9 @@ public class playerMovement : MonoBehaviour
 
     void Update()
     {
-       if ( Alive)
-        {
+       
             transform.Translate(Vector3.right * ForwardForce * Time.deltaTime);
-        }
+       
            
       
 
